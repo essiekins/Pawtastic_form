@@ -3,11 +3,62 @@ body {
   text-align: center;
 }
 
-.MainContainer{
-  background-size: 75%;
+/* contains the full app, sidebar, forms, everything */
+.MainContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1.1fr 4.4fr 1fr;
+  grid-template-areas: "sidebar greetings" "sidebar input-block" "save nav-ctrl-bar";
   background-color:palevioletred;
-  height:75%;
-  width:75%;
-  
 }
+
+/* contains navi system and save and exit link */
+.Sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". sidebar sidebar" "sidebar sidebar sidebar";
+  grid-area: sidebar;
+}
+
+/* these are the rows and colums within sidebar */
+.Sidebar { 
+  grid-area: sidebar;
+}
+
+.Sidebar {
+   grid-area: sidebar;  
+}
+
+.Nav-map {
+   grid-area: sidebar,nav-map; /* if this breaks rename as Sidebar again, testing output */
+} 
+
+.Sidebar { 
+  grid-area: sidebar;
+ }
+
+.Sidebar { 
+  grid-area: sidebar;
+}
+
+
+.save { 
+  grid-area: save;
+} /* save and exit link here */
+
+/* end of sidebar */
+
+.greetings { 
+  grid-area: greetings;
+}
+
+.input-block { 
+  grid-area: input-block;
+}
+
+/* bottom-most bar with back and next buttons */
+.nav-ctrl-bar {
+   grid-area: nav-ctrl-bar;
+} 
 
