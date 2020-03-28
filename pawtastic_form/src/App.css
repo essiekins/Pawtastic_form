@@ -1,4 +1,13 @@
-.App {
+body {
+  background-color:gray;
   text-align: center;
+}
+
+.MainContainer{
+  background-size: 75%;
+  background-color:palevioletred;
+  height:75%;
+  width:75%;
+  
 }
 
